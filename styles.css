@@ -50,7 +50,7 @@ input {
 main {
     background-color: darkkhaki;
     height: 5000px;
-    width: 45%;
+    width: 48%;
     margin: 10px;
 }
 
@@ -70,9 +70,20 @@ main {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.gith {
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .parrafuki { 
+    margin-left: 10px;
 }
 
 
@@ -91,4 +102,20 @@ main {
 .save {
     height: 30px;
     width: 50px;
+}
+
+.righty {
+    background: chartreuse;
+    border-radius: 10px;
+    font-size: larger;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.right-section {
+    height: 100px;
+    width: 100%;
+    background: crimson;
+    border-radius: 15px;
+    margin-top: 20px;
 }
