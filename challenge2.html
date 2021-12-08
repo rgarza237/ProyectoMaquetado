@@ -1,87 +1,208 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-    <title>Dev.io</title>
-</head>
-<body>
-    <header> 
-        <div class="head">
-            <div id="dev"> 
-                <p id="devid"> DEV </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"
+    />
+    <title>DEV</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #efefef">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img
+          style="width: 50px; height: 40px"
+          src="/images/devto.svg"
+          alt="Logo Dev"
+        />
+      </a>
+      <input
+        style="width: 420px; height: 40px; padding-left: 30px"
+        class="form-control mr-sm-2 form-serch"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button
+        style="border: none"
+        class="btn btn-outline-primary my-2 my-sm-0"
+        type="submit"
+      >
+        Log in
+      </button>
+      <button type="button" class="btn btn-primary">Create</button>
+    </nav>
+    <div class="container bg-efefef">
+      <div style="height: 1000px" class="row justify-content-between d-flex">
+        <div
+          class="
+            flex-column
+            col-sm-2 col-md-4 col-lg-3 col-xl-3
+            d-none d-md-flex
+          "
+        >
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a style="text-decoration-line: none" href="https://dev.to/"
+                    >DEV Community</a
+                  >
+                  is a community of 757,421 amazing developers
+                </h5>
+                <p class="card-text text-muted">
+                  We're a place where coders share, stay up-to-date and grow
+                  their careers.
+                </p>
+                <button
+                  style="border: none"
+                  class="btn btn-outline-primary my-2 my-sm-0"
+                  type="submit"
+                >
+                  Log in
+                </button>
+                <button type="button" class="btn btn-primary">Create</button>
+              </div>
             </div>
-            <div id="inpt">
-                <input type="search">
-            </div>
+          </div>
+          <div class="col-12">
+            <ul style="list-style: none" class="list-group">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              Home
+              <li style="text-decoration-line: none">
+                <a style="text-decoration-line: none" href="https://dev.to/"
+                  >Home</a
+                >
+              </li>
+              <li style="color: black">
+                <a style="text-decoration-line: none" href="https://dev.to/"
+                  >Sign In/Up</a
+                >
+              </li>
+              <li style="text-decoration-line: none">
+                <a style="color: black" href="https://dev.to/">Listings</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">Podcast</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">Videos</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">Tags</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">FAQ</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">DEV Shop</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">Sponsors</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">About</a>
+              </li>
+              <li>
+                <a href="https://dev.to/">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="head">
-            <button>Log in</button>
-            <button>Create account</button>
+        <div class="col-sm-12 col-md-8 col-lg-5 col-xl-5 bg-success">
+          <div class="card text-center"></div>
+          <div class="card text-center">
+            <div class="card-header" style="width: 100%; height: 700px">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Relevant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Latest</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Top</a>
+                </li>
+              </ul>
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--0cKr1W4d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v3r39rhzu0ylq585ixni.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+              <div class="col-12 d-flex" style="width: 100%; height: 33px">
+                <img style="border-radius: 100px; width: 32px; height: 32px;
+                vertical-align: bottom; display: inline-block;"
+                src=https://res.cloudinary.com/practicaldev/image/fetch/s--1fRLrAnm--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/720472/955f5bd4-6b0a-412f-a7cf-34be0e823218.jpg
+                class="img-fluid" alt="Responsive image" />
+                <div style="margin: 0 d-flex align-items-center">
+                  <p style="font-size: 10px">Digvijay Jadhav</p>
+                  <p style="font-size: 12px text-muted">Dec 7</p>
+                </div>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="card-body" style="width: 674px; height: 35px">
+              <a href="#" class="btn btn-Secondary aria-current=">Save</a>
+            </div>
+          </div>
+          Contenido
         </div>
-    </header>
-    <div id="page-content">
-    <div id="left-side-bar">
-        <section></section>
-        <article></article>
-        <article></article>
-        <article></article>
-        <section></section>
-        <section></section>
+        <div class="col-lg-4 d-none d-lg-flex col-lg-4 col-xl-4 bg-warning">
+          Derecha
+        </div>
+      </div>
+      <div class="row">
+        <footer style="padding: 0" class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            <p>
+              DEV Community – A constructive and inclusive social network for
+              software developers. With you every step of your journey.
+            </p>
+            <p>
+              Built on Forem — the open source software that powers DEV and
+              other inclusive communities. Made with love and Ruby on Rails. DEV
+              Community © 2016 - 2021.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              role="img"
+              aria-labelledby="am1lrsromqtkspah3jccfcp3gy7cciee"
+              class="crayons-icon crayons-icon--default"
+            >
+              <title id="am1lrsromqtkspah3jccfcp3gy7cciee">Forem logo</title>
+              <g clip-path="url(#clip0)" fill="#1AB3A6">
+                <path
+                  d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <path fill="#fff" d="M0 0h24v24H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
     </div>
-    <main>
-        <section class="chingadera">
-            <div>
-            <img class="fotuki" src="https://res.cloudinary.com/practicaldev/image/fetch/s--xuVlbNPx--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/670227/44b308c0-e7ee-4164-95d1-c1a2f6c2cb58.png" alt="">
-            </div>
-            <div class="parrafuki">
-                <p>Ben Halpern for The DEV Team</p>
-                <p>Dec 3</p>
-                <h3>Last Chance to Join the 2021 GitHub Actions Hackathon on DEV</h3>
-                <span> #meta    #actionshackathon21</span>
-                <footer class="pie">
-                    <div>
-                       <span>118 reactions</span>
-                       <span>20 comments</span>
-                    </div>
-                    <div>
-                        <span>2 min read </span>
-                        <button class="save"> Save </button>
-                    </div>
-                </footer>
-            </div>
-        </section>
-        <img class="recto" src="https://res.cloudinary.com/practicaldev/image/fetch/s--UpCCOtra--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j50mld6ii7wv7f9yscab.jpeg" alt="">
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-        <section class="chingadera"></section>
-    </main>
-    <div id="right-side-bar">
-        <section class="righty">
-            <p>DEV is built in the open via Forem... Want to take part in the discussion?</p>
-            <span>Join Forem.dev </span>
-        </section>
-        <img class="gith" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h55ubjdvzm6cazmhz5ra.png" alt="">
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-        <section class="right-section"></section>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
