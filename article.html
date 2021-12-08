@@ -1,0 +1,289 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>DEV</title>
+  </head>
+  <body style="background-color: #efefef">
+    <nav class="d-flex  justify-content-between navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div style="margin-left: 75px;" class="d-flex align-items-center">
+          <img  class="flex-column col-sm-12 d-lg-none d-md-none flex"
+          style="width: 35px;" src="/img/reorder-four-outline.svg" alt="">
+          <img
+          style="width: 50px; height: 40px"
+          src="/img/devto.svg"
+          alt="Logo Dev"
+        />
+      <input
+        style="width: 321px; height: 40px; padding-left: 30px"
+        class="form-control mr-sm-2 form-serch col-sm-4
+        d-none
+        col-md-1 col-lg-1 col-xl-1
+        d-none d-md-flex"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      
+        </div>
+       <div style="margin-right: 75px;" class="d-flex  ">
+        <img 
+        style="width: 35px;" src="/img/search-outline.svg" alt="">
+        <button
+        style="border: none; color: #3d20c5; width: 100px;"
+        class="btn btn-outline-primary  col-sm-4
+        col-md-6 col-lg-6 col-xl-6
+        d-none d-md-flex align-items-center justify-content-center"
+        type="submit"
+      >
+        Log in
+      </button>
+      <button style="background-color: #3d20c5; width: 150px;" type="button" class="btn btn-primary">Create account</button>
+       </div>
+      
+    </nav>
+    <div   class="container bg-efefef">
+      <div  style="margin-top: 20px;" class="row justify-content-between d-flex">
+        <div
+          class="
+            flex-column
+            col-sm-4
+            d-none
+            col-md-1 col-lg-1 col-xl-1
+            d-none d-md-flex
+          "
+        >
+          <div class="flex-column text-center">
+            <button
+              style="width: 40px; margin: 10px; background: none; border: none"
+            >
+              <img src="/img/heart-outline.svg" alt="Corazon" />
+              <samp class="text-muted">40</samp>
+            </button>
+            <button
+              style="width: 40px; margin: 10px; background: none; border: none"
+            >
+              <img style="width: 25px" src="/img/unicorn.svg" alt="Unicor" />
+              <samp class="text-muted">17</samp>
+            </button>
+            <button
+              style="width: 40px; margin: 10px; background: none; border: none"
+            >
+              <img
+                style="width: 25px"
+                src="/img/bookmark-outline.svg"
+                alt="Bookmark"
+              />
+              <samp class="text-muted">131</samp>
+            </button>
+            <button
+              style="width: 40px; margin: 10px; background: none; border: none"
+            >
+              <img
+                style="width: 20px"
+                src="/img/indicador-de-tres-puntos-mas.png"
+                alt="Puntos"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-11 col-lg-7 col-xl-7 bg-light">
+          <div class="d-flex">
+            <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--UXQNiCVS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p5gdkbwg7hnpznuw3guq.jpg"  alt="Cover image for Integrate APIs Without a Backend">
+          </div>
+          <div>
+          
+          </div>
+          <h1 style="overflow-wrap: break-word ; font-size: 270%; margin: 30px 0 30px 0;" class="Bootstrap heading justify-content-center justify-content-center">Integrate APIs Without a Backend</h1>
+            <div style=" margin: 30px 0 30px 0;" class="d-flex">
+              <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#showdev</a>
+              <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#webdev</a>
+              <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#security</a>
+              <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#jamstack</a>
+            </div>
+            <p>When we build websites and webapps that leverage the benefits of being delivered on the CDN (benefits include security, performance, infinite scaling, no backend infrastructure required) we will often run into limitations when we want more powerful, dynamic functionality. The best way to increase functionality is through the integration of APIs. APIs give our frontends near infinite possibilities; i.e. we can easily connect contact forms, process outside data, store information, or present information like the weather forecast, flight schedules, currency exchange rates etc. One of the key benefits of having our frontend on the CDN is not having to deal with building and maintaining backend infrastructure, but how do we integrate APIs securely and easily without a backend? Where do we secure the private API keys? What if we don't want user authentication prior to allowing our users to interact with a 3rd party API? We will go through the simplest way of connecting APIs with automated security using KOR Connect.
+              <br>
+              <br>
+              <strong> How quickly can this be done and what happens?</strong>
+              <br>
+              <br>
+              The answer is in a few quick minutes if the API you are integrating with has decent documentation, but why would you want to integrate with an API that doesn't anyways? KOR Connect does everything on the backend, and as the user we only have to copy-paste the KOR Connect public endpoint and the header into our code after entering the integrating API information into KOR Connect. Everything else is done on KOR Connect's end.
+              
+              Here are some of the things that happen automatically on KOR Connects end after you make a connection; bot controls are activated that inspect for, miscellaneous bots, security related bots, calls coming from automated browsers, black listed origins, and user agents that don’t seem to be coming from a browser; these calls are blocked if they don’t pass inspection. Furthermore KOR Connect validates the access-control-allow-origin header from your allowed origins, and provides a per user rate limiter that can block malicious actors abusing calls without causing any interruptions to other users.</p>
+          
+              <div class="d-flex">
+                <img class="rounded-top" style="width: 100%;" src=https://res.cloudinary.com/practicaldev/image/fetch/s--knqMNS9v--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kh9xxlwnmdnes7yu6rx5.png  alt="Cover image for Integrate APIs Without a Backend">
+              </div>
+              <h3>KOR Connect Backendless Reactjs Application</h3>
+              <p>We will be giving our ReactJS frontend the ability to allow users to enter any address and get the current weather conditions alongside other details such as the wind speed, humidity and temperature. The challenge is that we are going to be using two APIs; one to translate the address into latitude and longitude, and another API to give us the weather conditions for that location. We are providing this multi API integration as an example to show that you can integrate as many APIs as you would like into a single project. You can also quickly and easily integrate just one API as well, by following along.
+
+                This web app can be hosted on any CDN or static site service like S3, Gitlab pages, Netlify, etc.</p>
+                <div class="d-flex">
+                  <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ud2pKMzT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7r7k3fcefg7884ag4h42.png">
+                </div>
+                <p>The APIs
+                  Head over to Rapid API and subscribe to Forward & Reverse Geocoding as well as the Open Weather Map. After subscribing you'll be able to see your API Key in the Code Snippets section of each API's endpoint tab. Save that API key as well as the URL.
+                  
+                  KOR Connect
+                  If you already have a KOR Connect account you can sign in or you can create a new account.</p>
+        </div>
+      
+        <div class="col-lg-4 d-none d-lg-flex col-lg-4 col-xl-4">
+          <div>
+            <div
+              style="height: 220px; "
+              class="card d-flex rounded"
+            >
+              <div
+                style="height: 30px; background: black"
+                class="card-header"
+              ></div>
+              <div class="card-body">
+                <a style="color: black; text-decoration: none" href="">
+                  <img
+                    style="
+                      position: absolute;
+                      top: 20px;
+                      left: 20px;
+                      border-radius: 10px;
+                      width: 55px;
+                    "
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--gabpUa5Y--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/4693/29d93b63-a14c-4ecc-9359-c571cbe8270e.png"
+                    alt="LogoConnect"
+                  />
+                  <h5 style="padding-left: 60px" class="card-title m-2">
+                    <b> KOR Connect
+                  </h5></a
+                >
+                <a href="#" style="width: 100%; background-color: #4825e7;" class="btn btn-primary m-2"
+                  >Go somewhere</a
+                >
+                <p class="card-text m-2">
+                  The quickest way to integrate any API securely.
+                </p>
+              </div>
+            </div>
+            <div class="card rounded" style="width: 100%; margin-top: 20px">
+              <ul class="list-group list-group-flush">
+                <li style="font-size: 20px" class="list-group-item">
+                  <strong>More from</strong>
+                  <span style="color: blue">Connect</span>
+                </li>
+                <li class="list-group-item">
+                  Quickest Way to Secure API Keys on the Frontend (In Minutes)
+                  <div class="text-muted">
+                    #showdev #webdev #security #javascript
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  Best ways to Connect APIs on the frontend
+                  <div class="text-muted">
+                    #showdev #webdev #security #jamstack
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  Music Downloader API Secured on the Frontend
+                  <div class="text-muted">
+                    #showdev #webdev #security #react
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+    <footer  class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <p>
+          DEV Community – A constructive and inclusive social network for
+          software developers. With you every step of your journey.
+        </p>
+        <p>
+          Built on Forem — the open source software that powers DEV and other
+          inclusive communities. Made with love and Ruby on Rails. DEV
+          Community © 2016 - 2021.
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          role="img"
+          aria-labelledby="am1lrsromqtkspah3jccfcp3gy7cciee"
+          class="crayons-icon crayons-icon--default"
+        >
+          <title id="am1lrsromqtkspah3jccfcp3gy7cciee">Forem logo</title>
+          <g clip-path="url(#clip0)" fill="#1AB3A6">
+            <path
+              d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"
+            ></path>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" d="M0 0h24v24H0z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <div class="row">
+      <div class="flex-column col-sm-12 d-lg-none d-md-none flex">
+        <div class="d-flex justify-content-between">
+          <button
+            style="width: 40px; margin: 10px; background: none; border: none"
+          >
+            <img src="/img/heart-outline.svg" alt="Corazon" />
+            <samp class="text-muted">40</samp>
+          </button>
+          <button
+            style="width: 40px; margin: 10px; background: none; border: none"
+          >
+            <img style="width: 25px" src="/img/unicorn.svg" alt="Unicor" />
+            <samp class="text-muted">17</samp>
+          </button>
+          <button
+            style="width: 40px; margin: 10px; background: none; border: none"
+          >
+            <img
+              style="width: 25px"
+              src="/img/bookmark-outline.svg"
+              alt="Bookmark"
+            />
+            <samp class="text-muted">131</samp>
+          </button>
+          <button
+            style="width: 40px; margin: 10px; background: none; border: none"
+          >
+            <img
+              style="width: 20px"
+              src="/img/indicador-de-tres-puntos-mas.png"
+              alt="Puntos"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
