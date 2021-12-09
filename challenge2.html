@@ -13,36 +13,50 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
   </head>
   <body style="background-color: #efefef">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="#">
+    <nav class="d-flex  justify-content-between navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div style="margin-left: 75px;" class="d-flex align-items-center">
+        <img  class="flex-column col-sm-12 d-lg-none d-md-none flex"
+        style="width: 35px;" src="/img/reorder-four-outline.svg" alt="">
         <img
-          style="width: 50px; height: 40px"
-          src="/imagenes/L.png"
-          alt="Logo Dev"
-        />
-      </a>
-      <input
-        style="width: 420px; height: 40px; padding-left: 30px"
-        class="form-control mr-sm-2 form-serch"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
+        style="width: 50px; height: 40px"
+        src="/img/devto.svg"
+        alt="Logo Dev"
       />
+    <input
+      style="width: 321px; height: 40px; padding-left: 30px"
+      class="form-control mr-sm-2 form-serch col-sm-4
+      d-none
+      col-md-1 col-lg-1 col-xl-1
+      d-none d-md-flex"
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+    />
+    
+      </div>
+     <div style="margin-right: 75px;" class="d-flex  ">
+      <img 
+      style="width: 35px;" src="/img/search-outline.svg" alt="">
       <button
-        style="border: none"
-        class="btn btn-outline-primary my-2 my-sm-0"
-        type="submit"
-      >
-        Log in
-      </button>
-      <button type="button" class="btn btn-primary">Create</button>
-    </nav>
+      style="border: none; color: #3d20c5; width: 100px;"
+      class="btn btn-outline-primary  col-sm-4
+      col-md-6 col-lg-6 col-xl-6
+      d-none d-md-flex align-items-center justify-content-center"
+      type="submit"
+    >
+      Log in
+    </button>
+    <button style="background-color: #3d20c5; width: 150px;" type="button" class="btn btn-primary">Create account</button>
+     </div>
+    
+  </nav>
 
     
     <div class="container bg-efefef">
       <div class="row justify-content-between d-flex">
         <div
           class="
+          bg-danger
             flex-column
             col-sm-2 col-md-4 col-lg-3 col-xl-3
             d-none d-md-flex
@@ -123,13 +137,13 @@
             <li class="mb-1">#javascript</li>
           </ul>
         </nav> 
-        <div class="card" style="width: 16.5rem;">
+        <div class="card" style="width: 100%;">
           <img src="img/nmgcttm65v389g8cuozn.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-primary">I find your lack of merch disturbing</h5>
           </div>
         </div> 
-        <div class="card mt-3" style="width: 16.5rem;">
+        <div class="card mt-3" style="width: 100;">
           <div class="card-body">
             <p class="card-text">DEV runs on 100% open source code known as Forem.
 
@@ -146,46 +160,58 @@
       
       <!--Gustavo-->
         <div class="col-sm-12 col-md-8 col-lg-5 col-xl-5 bg-success">
-          <div class="card text-center"></div>
-          <div class="card text-center">
-            <div class="card-header" style="width: 100%; height: 700px">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Relevant</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Latest</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Top</a>
-                </li>
-              </ul>
-              <img
+          <div class=" d-flex row " style="width: 100%; margin-top: 10px; margin-bottom: 10px; padding-left: 10px;" >
+            <div class="col-2">
+            <strong> Relevant </strong>
+             </div>
+             <div class="col-2">
+            Latest
+             </div>
+             <div class="col-2">
+            Top
+             </div>
+          </div>
+          <div>
+          <img
                 src="https://res.cloudinary.com/practicaldev/image/fetch/s--0cKr1W4d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v3r39rhzu0ylq585ixni.jpg"
-                class="img-fluid"
+                class="img-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"
                 alt="Responsive image"
               />
-              <div class="col-12 d-flex" style="width: 100%; height: 33px">
-                <img style="border-radius: 100px; width: 32px; height: 32px;
-                vertical-align: bottom; display: inline-block;"
+              </div>
+          <div style="height: 170px; width: 100%;" class="card text-center col-12">
+              <div class=" d-flex row col-12 " style=" height: 40px;">
+                <div class="col-2">
+                <img style="border-radius: 50%; width: 35px; height: 35px;"
                 src=https://res.cloudinary.com/practicaldev/image/fetch/s--1fRLrAnm--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/720472/955f5bd4-6b0a-412f-a7cf-34be0e823218.jpg
                 class="img-fluid" alt="Responsive image" />
-                <div style="margin: 0 d-flex align-items-center">
-                  <p style="font-size: 10px">Digvijay Jadhav</p>
-                  <p style="font-size: 12px text-muted">Dec 7</p>
                 </div>
-              </div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="card-body" style="width: 674px; height: 35px">
-              <a href="#" class="btn btn-Secondary aria-current=">Save</a>
-            </div>
-          </div>
-          Contenido
+                <div style="" class="d-flex flex-column align-top col-10">
+                  <div class="col-4" style="font-size: 10px">Digvijay Jadhav</div>
+                  <div class="col-4" style="font-size: 12px text-muted">Dec 7</div>
+                  </div>
+                  </div>
+                  <h2 class="fs-3 fw-bold col-12"> Roadmap for React JS 2022 </h2>
+                  <div class="col-sm-12 col-md-8" style="margin-top: 5px;">
+                    <a class="txta">#react</a>
+                    <a class="txta">#javascript</a>
+                    <a class="txta">#beginners</a>
+                    <a class="txta">#webdev</a> </div>
+                    <div class="minis col-12">
+                    <div class="text-muted fw-light txtcard">
+                      <a class="txta"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a3u6qwfhikkjsi2rnips63qegrqpx5cf" class="crayons-icon"><title id="a3u6qwfhikkjsi2rnips63qegrqpx5cf">Reactions</title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg> 331 reactions</a>
+                      <a class="txta"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="adxaiqilgrttisozf5n8fggevvpan5vg" class="crayons-icon"><title id="adxaiqilgrttisozf5n8fggevvpan5vg">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg> 14 comments</a>
+                    </div>
+                    <div>
+                      <a class="txta">4 min read</a>
+                      <button class="btn btn-primary" style="background-color: gray;">Save</button>
+                    </div>
+                  </div>
+                </div>
+          
+          
         </div>
-        <div class="col-lg-4 d-none d-lg-flex col-lg-4 col-xl-4 bg-warning">
-          <div class="list-group">
+        <div class="col-lg-4 d-none d-lg-flex col-lg-3 col-xl-4 bg-warning">
+          <div class="list-group" style="width: 100%;">
             <div>
               <a href="#" style="background-color: #efefef;" class="fw-bolder fs-5 p-3 list-group-item list-group-item-action">#discuss</a>           
         
@@ -378,7 +404,7 @@
         </div>
       </div>
       <div class="row">
-        <footer style="padding: 0" class="bg-light text-center text-lg-start">
+        <footer  class="bg-light text-center text-lg-start">
           <!-- Copyright -->
           <div
             class="text-center p-3"
@@ -389,8 +415,8 @@
               software developers. With you every step of your journey.
             </p>
             <p>
-              Built on Forem — the open source software that powers DEV and
-              other inclusive communities. Made with love and Ruby on Rails. DEV
+              Built on Forem — the open source software that powers DEV and other
+              inclusive communities. Made with love and Ruby on Rails. DEV
               Community © 2016 - 2021.
             </p>
             <svg
