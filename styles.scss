@@ -1,12 +1,23 @@
-
-
-
 .maluma {
-    padding-left: 70px;
+  padding-left: 70px;
 }
 
-@media   ( max-width: 768px) {
-    .maluma {
+@media (max-width: 768px) {
+  .maluma {
     padding-left: 5px;
-    } 
+  }
+  .icono-placeholder {
+    padding-left: 100px;
+  }
+}
+.placeholder {
+  background-image: url(/img/search-outline.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  fill: darkgrey;
+}
+.placeholderT {
+  background-image: url(/img/search-outline.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }

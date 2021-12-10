@@ -17,45 +17,119 @@
     <title>DEV</title>
   </head>
   <body style="background-color: #efefef">
-    <nav class="d-flex  justify-content-between navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div style="margin-left: 75px;" class="d-flex align-items-center">
-          <img  class="flex-column col-sm-12 d-lg-none d-md-none flex"
-          style="width: 35px;" src="/img/reorder-four-outline.svg" alt="">
-          <img
-          style="width: 50px; height: 40px"
-          src="/img/devto.svg"
-          alt="Logo Dev"
-        />
-      <input
-        style="width: 321px; height: 40px; padding-left: 30px"
-        class="form-control mr-sm-2 form-serch col-sm-4
-        d-none
-        col-md-1 col-lg-1 col-xl-1
-        d-none d-md-flex"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white">
+      <div class="container-lg">
+        <div class="d-flex justify-content-md-between align-items-center">
+          <button class="navbar-toggler d-md-none menu-mobile" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="/img/devto.svg" alt="Logo DevTo" width="40"></a>
+          <div id="inputSearch" class="d-flex">
+            <input style="background-color: white;" class="form-control d-none d-md-block placeholderT" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn" type="button"><i class="bi bi-search"></i></button>
+          </div>
         </div>
-       <div style="margin-right: 75px;" class="d-flex  ">
-        <img 
-        style="width: 35px;" src="/img/search-outline.svg" alt="">
-        <button
-        style="border: none; color: #3d20c5; width: 100px;"
-        class="btn btn-outline-primary  col-sm-4
-        col-md-6 col-lg-6 col-xl-6
-        d-none d-md-flex align-items-center justify-content-center"
-        type="submit"
-      >
-        Log in
-      </button>
-      <button style="background-color: #3d20c5; width: 150px;" type="button" class="btn btn-primary">Create account</button>
-       </div>
-      
+        <div class="d-flex justify-content-end">
+          <a style="color: rgb(116, 116, 116);" class="nav-link d-none d-md-block">Log in</a>
+          <button  style="color: floralwhite; border:none; background-color: #4825e7;" type="button" class="btn " type="submit">Create account</button>
+
+        </div>
+        <!--Menú mobile -->
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><a href="index.html">Dev Community</a> is a community of 757,079 amazing
+                  developers</h5>
+                <p class="card-text">We're a place where coders share, stay up-to-date and grow their careers.</p>
+                <div class="d-flex flex-column">
+                  <button href="#" class="btn btn-purple" width="100">Create account</button>
+                  <a style="color: rgb(147, 147, 147);" href="#" class="btn btn-light--ghost-brand w-100">Log in</a>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-home.svg" alt="Home Icon">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-sign.svg" alt="Sing In/Up Icon">
+                <a class="nav-link" href="#">Sign In/Up</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-scroll.svg" alt="Listings Icon">
+                <a class="nav-link" href="#">Listings</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-podcasts.svg" alt="Podcasts Icon">
+                <a class="nav-link" href="#">Podcasts</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-videos.svg" alt="Videos Icon">
+                <a class="nav-link" aria-current="page" href="#">Videos</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-tags.svg" alt="Tags Icon">
+                <a class="nav-link" href="#">Tags</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-faq.svg" alt="FAQ Icon">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-devshop.svg" alt="Dev Shop Icon">
+                <a class="nav-link" href="#">DEV Shop</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-sponsors.svg" alt="Sponsors Icon">
+                <a class="nav-link" aria-current="page" href="#">Sponsors</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-about.svg" alt="About Icon">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-contact.svg" alt="Contact Icon">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <h2 id="other-nav-heading" class="mt-6 mb-2 fs-base">
+              Other
+            </h2>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-codeofconduct.svg" alt="Code of Conduct Icon">
+                <a class="nav-link" href="#">Code of Conduct</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-privacypolicy.svg" alt="Privacy Policy Icon">
+                <a class="nav-link" aria-current="page" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item d-flex">
+                <img src="assets/svg/icon-terms.svg" alt="Terms of Use Icon">
+                <a class="nav-link" href="#">Terms of use</a>
+              </li>
+            </ul>
+            <div id="socialMedia">
+              <a href=""><img src="assets/svg/icon-twitter.svg" alt="Twitter Logo"></a>
+              <a href=""><img src="assets/svg/icon-facebook.svg" alt="Facebook Logo"></a>
+              <a href=""><img src="assets/svg/icon-github.svg" alt="Github Logo"></a>
+              <a href=""><img src="assets/svg/icon-instagram.svg" alt="Instagram Logo"></a>
+              <a href=""><img src="assets/svg/icon-twitch.svg" alt="Twitch Logo"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <div   class="container bg-efefef">
-      <div  style="margin-top: 20px;" class="row justify-content-between d-flex">
+      <div  style="margin-top: 80px;" class="row justify-content-between d-flex">
         <div
           class="
             flex-column
@@ -102,6 +176,15 @@
         <div class="col-sm-12 col-md-11 col-lg-7 col-xl-7 bg-light">
           <div class="d-flex">
             <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--UXQNiCVS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p5gdkbwg7hnpznuw3guq.jpg"  alt="Cover image for Integrate APIs Without a Backend">
+          </div>
+          <div style="height: 40px; height: 40px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+            <div>
+              <img class="al" style="width: 55%; border-radius: 20px; " src="/imagenes/about.png" alt="">
+            </div>
+            <div class="  row justify-content-start"  > 
+              <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 90%; font-weight: lighter;">Alex Eagleson</button>
+              <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+            </div>
           </div>
           <div>
           
