@@ -23,4 +23,10 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+
+.containerCardderStiky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -196,7 +196,7 @@
               <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#security</a>
               <a style="font-weight: lighter; text-decoration: none; color: rgb(33, 33, 33); margin-right: 15px;" href="">#jamstack</a>
             </div>
-            <p>When we build websites and webapps that leverage the benefits of being delivered on the CDN (benefits include security, performance, infinite scaling, no backend infrastructure required) we will often run into limitations when we want more powerful, dynamic functionality. The best way to increase functionality is through the integration of APIs. APIs give our frontends near infinite possibilities; i.e. we can easily connect contact forms, process outside data, store information, or present information like the weather forecast, flight schedules, currency exchange rates etc. One of the key benefits of having our frontend on the CDN is not having to deal with building and maintaining backend infrastructure, but how do we integrate APIs securely and easily without a backend? Where do we secure the private API keys? What if we don't want user authentication prior to allowing our users to interact with a 3rd party API? We will go through the simplest way of connecting APIs with automated security using KOR Connect.
+            <p>When we build websites and webapps that leverage the benefits of being delivered on the CDN (benefits include security, performance, infinite scaling, no backend infrastructure required) we will often run into limitations when we want more powerful, dynamic functionality. The best way to increase functionality is through the integration of APIs. APIs give our frontends near infinite possibilities; i.e. we can easily connect contact forms, process outside data, store information, or present information like the weather forecast, flight schedules, currency exchange rates etc. One of the key benefits of having our frontend on the CDN is not having to deal with building and maintaining backend infrastructure, but how do we integrate APIs securely and easily without a backend? Where do we secure the private API keys? What if we don't want user authentication prior to allowing our users to interact with a 3rd party API? We will go through the simplest way of connecting APIs with automated security using <a href="">KOR Connect</a>.
               <br>
               <br>
               <strong> How quickly can this be done and what happens?</strong>
@@ -217,17 +217,111 @@
                   <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ud2pKMzT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7r7k3fcefg7884ag4h42.png">
                 </div>
                 <p>The APIs
-                  Head over to Rapid API and subscribe to Forward & Reverse Geocoding as well as the Open Weather Map. After subscribing you'll be able to see your API Key in the Code Snippets section of each API's endpoint tab. Save that API key as well as the URL.
+                  Head over to <a href="">Rapid API</a>and subscribe to<a href="">Forward & Reverse Geocoding</a>as well as the<a href="">Open Weather Map </a>a. After subscribing you'll be able to see your API Key in the Code Snippets section of each API's endpoint tab. Save that API key as well as the URL.
                   
                   KOR Connect
-                  If you already have a KOR Connect account you can sign in or you can create a new account.</p>
+                  If you already have a <a href="">KOR Connect</a>account you can <a href="">sign in</a> or you can create a new account.</p>
+                  <br>
+                  <p>Now from the KOR Connect dashboard select the Connect API button and fill in the form for a new connection. The only fields you need to change from the following image are the API Key and the allowed domain (choose the domain you'll be hosting your app from). The API key is the one you stored in the previous step. Optionally you can add more domains and change the name of the connection.</p>
+                  <div class="d-flex">
+                    <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--FpC8WEiL--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tzikxgebrpad8xmoa3zv.png">
+                  </div>
+                  <br>
+                  <p>With your connections created you are now able to enter each connection via View Details to retrieve each secure URL and header that you'll need to include in your code.</p>
+                  <br>
+                  <div class="d-flex">
+                    <img class="rounded-top" style="width: 100%;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--7Sq4T08W--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cw6vygup861z27sfy46h.png">
+                  </div>
+                  <br>
+                  <p>
+                    You can modify the per user rate limit for your API calls at the top left of the screen. The Default is 5 calls per second. This rate limiter controls the number of calls per second, per user; so if a malicious user is attempting to increase your costs or crash your API connection that user will be blocked without causing any interference with other users. More information regarding the rate limiter<a href="">here</a>.
+                  </p>
+                  <br>
+                  <p>
+                    The Secure URL that is generated acts similar to the API base URL, and the header is using a KOR Connect generated public API key, with these two ready, you are now able to test and use your connection. Notice the Connection Mode on the top right, you are currently on Testing which means you can access KOR Connect through localhost but once you switch to production this is blocked, read more about it in the <a href="">Testing and Production Modes documentation</a>.
+                  </p>
+                  <br>
+                  <p>There is no configuration, library or import required to use KOR Connect's Single URI feature so we can jump straight to the API calls.</p>
+                  <br>
+                  <p>
+                    Here's the geolocation Axios request example where you can replace < SECURE-URL > with your secure base URL generated by KOR Connect and add the parameters you would like to have. Furthermore you can replace < PUBLIC-API-KEY > with the KOR Connect provided public API key. Here is our <a href="">code</a> you can take a look at:
+                  </p>
+                  <div style="margin-top: 60px; margin-bottom: 50px;" class="card text-center">
+                    <div style=" background-color: rgb(235, 233, 233);" class="card-header">
+                      <div class="d-flex">
+                        <h5 style="font-size: 40px;" class="d-flex justify-content-star">Read next</h5>
+                      </div>
+                      <div style="height: 50px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+                        <div>
+                          <img class="justify-content-xxl-center align-items-center" style="width: 40px; height: 40px; border-radius: 20px; " src="/imagenes/Artur.jpeg" alt="">
+                        </div>
+                        <div style="padding-left: 20px;" class="  row justify-content-start"  >
+                          <a style="text-decoration: none; color: black;" href="">
+                          <h5 class="justify-content-star d-flex" style="font-size: 15px; margin: 0;">Cards der</h5></a>
+                          <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 70%; font-weight: lighter;">Arturo Jaramillo</button>
+                          <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+                        </div>
+                        
+                      </div>
+                      <div style="height: 60px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+                        <div>
+                          <img class="justify-content-xxl-center align-items-center" style="width: 40px; height: 40px; border-radius: 20px; " src="/imagenes/Rob.jpeg" alt="">
+                        </div>
+                        <div style="padding-left: 20px;" class="  row justify-content-start"  >
+                          <a style="text-decoration: none; color: black;" href="">
+                          <h5 class="justify-content-star d-flex" style="font-size: 15px; margin: 0;">Cards comentario</h5></a>
+                          <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 70%; font-weight: lighter;">Roberto Garza</button>
+                          <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+                        </div>
+                        
+                      </div>
+                      <div style="height: 60px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+                        <div>
+                          <img class="justify-content-xxl-center align-items-center" style="width: 40px; height: 40px; border-radius: 20px; " src="/imagenes/Gus.png" alt="">
+                        </div>
+                        <div style="padding-left: 20px;" class="  row justify-content-start"  >
+                          <a style="text-decoration: none; color: black;" href="">
+                          <h5 class="justify-content-star d-flex" style="font-size: 15px; margin: 0;">Cards izq</h5></a>
+                          <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 70%; font-weight: lighter;">Gustavo Ramirez</button>
+                          <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+                        </div>
+                        
+                      </div>
+                      <div style="height: 60px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+                        <div>
+                          <img class="justify-content-xxl-center align-items-center" style="width: 40px; height: 40px; border-radius: 20px; " src="/imagenes/Hugo.jpeg" alt="">
+                        </div>
+                        <div style="padding-left: 20px;" class="  row justify-content-start"  >
+                          <a style="text-decoration: none; color: black;" href="">
+                          <h5 class="justify-content-star d-flex" style="font-size: 15px; margin: 0;">Card top izq</h5></a>
+                          <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 70%; font-weight: lighter;">Hugo Ro</button>
+                          <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+                        </div>
+                        
+                      </div>
+                      <div style="height: 60px; margin-top: 15px;" class="d-flex col-12 align-items-center justify-content-start">
+                        <div>
+                          <img class="justify-content-xxl-center align-items-center" style="width: 40px; border-radius: 20px; " src="/imagenes/Rubs.png" alt="">
+                        </div>
+                        <div style="padding-left: 20px;" class="  row justify-content-start"  >
+                          <a style="text-decoration: none; color: black;" href="">
+                          <h5 class="justify-content-star d-flex" style="font-size: 15px; margin: 0;">Articulo</h5> </a>
+                          <button class="justify-content-star d-flex" style="border: none;background: none; font-size: 90%; font-weight: lighter;">Ruben Somuano</button>
+                          <p style="margin-bottom: 0; font-size: 80%; font-weight: lighter;   " class="text-muted justify-content-star d-flex">7 Dic</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                 
+
         </div>
       
         <div class="col-lg-4 d-none d-lg-flex col-lg-4 col-xl-4">
-          <div>
+          <div class="containerCardderStiky">
             <div
               style="height: 220px; "
-              class="card d-flex rounded"
+              class="card d-flex rounded "
             >
               <div
                 style="height: 30px; background: black"
